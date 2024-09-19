@@ -5,7 +5,9 @@
         <link rel="shortcut icon" href="./img/logo-tab.png" type="Image/icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlWan</title>
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,8 +15,22 @@
     <!-- Navbar -->
     <nav class="bg-white shadow-sm py-3">
         <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center space-x-4 ml-5 md:ml-10 md:hidden">
+                <a href="#" class="w-5 h-5 md:w-8 md:h-8">
+                    <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 fill-[#02546480] cursor-pointer"
+          viewBox="0 0 256 256"
+        >
+          <path
+            class="fill-[#025480]"
+            d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z"
+          ></path>
+        </svg>
+                </a>
+            </div>
             <!-- Left: Logo -->
-            <div class="flex items-center ml-10">
+            <div class="flex items-center justify-center ml-10">
                 <img src="./img/logo.png" alt="Alwan Logo" class="h-10">
             </div>
             <!-- Middle: Menu -->
@@ -26,23 +42,24 @@
                 <li><a href="#" class="hover:text-gray-900">Contact</a></li>
             </ul>
             <!-- Right: Search and User -->
-            <div class="flex items-center space-x-4 mr-10">
+            
+            <div class="flex items-center space-x-3 mr-5 md:mr-10">
                 <a href="#" class="text-gray-700 hover:text-gray-900">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 256 256"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
                 </a>
                 <a href="#" class="text-gray-700 hover:text-gray-900"
-              ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path></svg>
+              ><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path></svg>
                 </a>
             </div>
+            
         </div>
     </nav>
 
     <!-- Main Content -->
-    
 
-<div id="default-carousel" class="relative w-full px-4 rounded-lg" data-carousel="slide">
+<section id="default-carousel" class="relative w-full md:px-4 rounded-lg" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-80 md:h-96 lg:h-[720px] overflow-hidden rounded-lg ">
+    <div class="relative h-44 md:h-96 lg:h-[700px] overflow-hidden rounded-lg">
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="./img/carousel-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -89,14 +106,14 @@
             <span class="sr-only">Next</span>
         
     </button>
-</div>
+</section>
 
     
     <!-- Header Section -->
     <header class="bg-white shadow-sm py-6">
         <div class="container mx-auto text-center px-4">
             <h2 class="text-sm font-semibold text-gray-500">Hoddie AlWan</h2>
-            <h1 class="text-4xl font-extrabold text-gray-900">WINNING ISN'T COMFORTABLE</h1>
+            <h1 class="text-4xl font-extrabold text-gray-900 px-4">WINNING ISN'T COMFORTABLE</h1>
             <p class="mt-2 text-gray-600">If you don't hate hoddie a little, you don't love hoddie enough.</p>
             <a href="#" class="mt-4 inline-block px-6 py-2 bg-black text-white font-semibold rounded-full hover:bg-gray-800">Shop Hoddie</a>
         </div>
@@ -104,7 +121,7 @@
 
     <!-- Featured Section -->
     <section class="container mx-auto mt-12">
-        <h2 class="text-center text-2xl font-bold text-gray-900 mb-4 mx-auto">Featured</h2>
+        <h2 class="text-center text-4xl font-bold text-gray-900 mb-4 mx-auto">Featured</h2>
         <hr class="w-20 flex items-center justify-center mx-auto border-gray-900 border-2 rounded-full">
         <div class="container p-4 md:px-8 mx-auto mt-3 md:mt-4">
         <div
@@ -220,7 +237,7 @@
     </section>
 
   <section class="max-w-screen-lg mx-auto py-8 gap-4 px-8">
-    <h1 class="text-2xl text-gray-900 font-bold text-center mx-auto">Gen You Collection</h1>
+    <h1 class="text-3xl md:text-4xl text-gray-900 font-bold text-center mx-auto">Gen You Collection</h1>
     <hr class="w-20 flex items-center justify-center mx-auto border-gray-900 border-2 rounded-full my-5">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <!-- Item 1: Men's Polo -->
@@ -256,7 +273,7 @@
   </section>
 
   <section class="max-w-screen-lg mx-auto py-8 px-8">
-    <h1 class="text-2xl font-bold text-center text-gray-900">Member Benefits</h1>
+    <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900">Member Benefits</h1>
     <hr class="w-20 flex items-center justify-center mx-auto border-gray-900 border-2 rounded-full my-5">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <!-- Card 1: Your Exclusive Access -->
@@ -291,8 +308,9 @@
     </div>
   </section>
 
-  <footer class="bg-white py-8 px-52">
+  <footer class="bg-white py-8 md:px-52 gap-4">
     <div class="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+      
       <!-- Resources Column -->
       <div>
         <h3 class="font-semibold mb-4 text-center md:text-left">Resources</h3>
