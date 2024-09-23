@@ -13,7 +13,7 @@
 </head>
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="bg-white shadow-sm py-4">
+    <nav class="bg-white shadow-sm py-4 w-full z-50">
         <div class="container mx-auto flex justify-between items-center">
           <div onclick="openNavbar()"
         class="toggle flex items-center space-x-4 ml-5 md:ml-10 md:hidden">
@@ -37,11 +37,11 @@
             <!-- Middle: Menu -->
             <ul class="hidden md:flex space-x-6 text-gray-700 ">
                 <li><a href="#" class="hover:text-gray-900 font-bold">New & Featured</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold">Home</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold">Feature</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold">Sale</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold">News</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold">Contact</a></li>
+                <li><a href="./index.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Home</a></li>
+                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Feature</a></li>
+                <li><a href="./sale.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Sale</a></li>
+                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">News</a></li>
+                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Contact</a></li>
             </ul>
             <!-- Right: Search and User -->
             
@@ -68,7 +68,7 @@
             </ul>
         </div>
         <div class="relative w-full">
-            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-100 bg-gray-200 rounded-e-lg border-s-gray-100 border border-gray-300" placeholder="Search" required />
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full text-sm text-gray-100 bg-gray-200 rounded-e-lg border-s-gray-100 border border-gray-300" placeholder="Search" required />
             <button type="submit" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-gray-700 rounded-e-lg border hover:border-gray-100 hover:bg-gray-800 ">
                 <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
@@ -87,7 +87,7 @@
     </nav>
 
     <aside
-      class="w-full h-[300px] bg-blur-lg bg-white bg-opacity-90 absolute z-50 transition-all duration-200 ease-in-out -translate-x-full sm:hidden"
+      class="w-full h-[300px] bg-blur-lg bg-white bg-opacity-90 absolute z-50 transition-all duration-200 ease-in-out -translate-x-full xl:hidden"
     >
       <div
         class="content backdrop-blur h-full flex items-center justify-center relative z-[99]"
@@ -131,26 +131,41 @@
 
 <section id="default-carousel" class="relative w-full md:px-4 rounded-lg" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-60 md:h-96 lg:h-[600px] overflow-hidden rounded-lg">
+    <div class="relative h-52 md:h-96 lg:h-[600px] overflow-hidden rounded-lg">
          <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="./img/carousel-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>          <img src="./img/carousel-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
+          <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center pl-96 pb-80">
+        <h2 class="text-white text-xl md:text-9xl font-bold">Flight<span class="text-7xl font-light"> Hodie </span></h2>
+      </div>
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="./img/carousel-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
+            <div class="absolute inset-0 flex justify-center items-start pt-10 text-center space-x-44 ml-9">
+        <h2 class="text-white text-xl md:text-7xl font-bold">New</h2>
+        <h2 class="text-white text-xl md:text-7xl font-light">Arrival</h2>
+      </div>
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="./img/carousel-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-start items-center pl-20 pb-80">
+        <h2 class="text-white text-xl md:text-5xl font-normal">Disc Up To <br><span class="text-9xl font-bold">50%</span></h2>
+      </div>
         </div>
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="./img/carousel-4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-end items-center pr-20 pb-80">
+        <h2 class="text-white text-xl md:text-5xl font-normal">Sale Up To<br><span class="text-9xl font-bold">70%</span></h2>
+      </div>
         </div>
         <!-- Item 5 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
             <img src="./img/carousel-5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover" alt="...">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex justify-start items-center pl-20 pb-80">
+        <h2 class="text-white text-xl md:text-2xl font-normal">Celected item Up To<br><span class="text-9xl font-bold">50%</span></h2>
+      </div>
         </div>
     </div>
     <!-- Slider indicators -->
@@ -162,17 +177,17 @@
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
     </div>
     <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 ml-3 cursor-pointer group focus:outline-none" data-carousel-prev>
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 ml-3 md:ml-7 cursor-pointer group focus:outline-none" data-carousel-prev>
         
-            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <svg class="w-4 h-4 md:w-7 md:h-7 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
             </svg>
             <span class="sr-only">Previous</span>
 
     </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 mr-3 cursor-pointer group focus:outline-none" data-carousel-next>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 mr-3 md:mr-7 cursor-pointer group focus:outline-none" data-carousel-next>
         
-            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <svg class="w-4 h-4 md:w-7 md:h-7 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
             </svg>
             <span class="sr-only">Next</span>
@@ -187,7 +202,7 @@
             <h2 class="text-sm font-semibold text-gray-500">Hoddie AlWan</h2>
             <h1 class="text-4xl font-extrabold text-gray-900 px-4">FEEL EVERY STITCH ON THE HODDIE</h1>
             <p class="mt-2 text-gray-600">If you don't hate hoddie a little, you don't love hoddie enough.</p>
-            <a href="#" class="mt-4 inline-block px-6 py-2 bg-black text-white font-semibold rounded-full hover:bg-gray-800">Shop Hoddie</a>
+            <a href="./sale.html" class="mt-4 inline-block px-6 py-2 bg-black text-white font-semibold rounded-full hover:bg-gray-800">Shop Hoddie</a>
         </div>
     </header>
 
@@ -202,7 +217,7 @@
         >
         <div class="overflow-x-auto custom-scrollbar flex pb-4 gap-4">
             <div
-              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-md rounded-md"
+              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl rounded-md z-50"
               >
               <div
                 class="photo overflow-hidden w-64 h-6w-64 rounded-md"
@@ -219,7 +234,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-md rounded-md"
+              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl rounded-md z-50"
               >
               <div
                 class="photo overflow-hidden w-64 h-6w-64 rounded-md"
@@ -236,7 +251,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-md rounded-md"
+              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl rounded-md z-50"
               >
               <div
                 class="photo overflow-hidden w-64 h-6w-64 rounded-md"
@@ -253,7 +268,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-md rounded-md"
+              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl rounded-md z-50"
               >
               <div
                 class="photo overflow-hidden w-64 h-6w-64 rounded-md"
@@ -270,7 +285,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-md rounded-md"
+              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl rounded-md z-50"
               >
               <div
                 class="photo overflow-hidden w-64 h-6w-64 rounded-md"
@@ -287,7 +302,7 @@
               </p>
             </div>
             <div
-              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-md rounded-md"
+              class="flex flex-col items-center w-100 gap-4 p-4 bg-white shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl rounded-md z-50"
               >
               <div
                 class="photo overflow-hidden w-64 h-6w-64 rounded-md"
@@ -309,11 +324,11 @@
     </section>
 
   <section class="max-w-screen-lg mx-auto py-8 gap-4 px-8">
-    <h1 class="text-3xl md:text-4xl text-gray-900 font-bold text-center mx-auto">Gen You Collection</h1>
+    <h1 class="text-3xl md:text-4xl text-gray-900 font-bold text-center mx-auto">Sale You Collection</h1>
     <hr class="w-20 flex items-center justify-center mx-auto border-gray-900 border-2 rounded-full my-5">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <!-- Item 1: Men's Polo -->
-      <div class="bg-white rounded-lg shadow-md p-4">
+      <div class="bg-white rounded-lg p-4 shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl">
         <img src="./img/s-1.png" alt="Men's Polo" class="w-full h-auto object-cover rounded-t-lg">
         <div class="mt-4 text-center">
           <h2 class="font-semibold text-lg">AlWan Levis</h2>
@@ -323,7 +338,7 @@
       </div>
 
       <!-- Item 2: Men's El Chino Trousers -->
-      <div class="bg-white rounded-lg shadow-md p-4">
+      <div class="bg-white rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl p-4">
         <img src="./img/s-1.png" alt="Men's El Chino Trousers" class="w-full h-auto object-cover rounded-t-lg">
         <div class="mt-4 text-center">
           <h2 class="font-semibold text-lg">AlWan Lol</h2>
@@ -333,7 +348,7 @@
       </div>
 
       <!-- Item 3: AlWan Zoom Vomero 5 Shoes -->
-      <div class="bg-white rounded-lg shadow-md p-4">
+      <div class="bg-white rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl p-4">
         <img src="./img/s-1.png" alt="AlWan Zoom Vomero 5 Shoes" class="w-full h-auto object-cover rounded-t-lg">
         <div class="mt-4 text-center">
           <h2 class="font-semibold text-lg">AlWan Polo</h2>
@@ -342,24 +357,28 @@
         </div>
       </div>
     </div>
+    <button class="py-2 px-9 bg-gray-400 hover:bg-gray-500 shadow-lg rounded-lg flex items-center justify-center mx-auto my-8 hover:scale-95 duration-200 text-white">
+      <a href="./sale.html">See More</a>
+    </button>
   </section>
 
   <section class="max-w-screen-lg mx-auto py-8 px-8">
-    <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900">Member Benefits</h1>
+    <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900">News AlWan</h1>
     <hr class="w-20 flex items-center justify-center mx-auto border-gray-900 border-2 rounded-full my-5">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       <!-- Card 1: Your Exclusive Access -->
-      <div class="relative bg-white rounded-lg shadow-md overflow-hidden">
+      <div class="relative bg-white rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl overflow-hidden">
         <img src="./img/carousel-3.png" alt="Your Exclusive Access" class="w-full h-auto object-cover">
         <div class="absolute bottom-0 left-0 p-4 text-white">
           <p class="font-semibold">Member Product</p>
           <h2 class="text-xl font-bold">Your Exclusive Access</h2>
-          <button class="mt-2 px-4 py-1 bg-white text-black rounded-full">Shop</button>
+          <button class="mt-2 px-4 py-1 bg-white text-black rounded-full"><a href="./sale.html">Shop</a>
+            </button>
         </div>
       </div>
 
       <!-- Card 2: Your Customisation Service -->
-      <div class="relative bg-white rounded-lg shadow-md overflow-hidden">
+      <div class="relative bg-white rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl overflow-hidden">
         <img src="./img/carousel-2.png" alt="Your Customisation Service" class="w-full h-auto object-cover">
         <div class="absolute bottom-0 left-0 p-4 text-white">
           <p class="font-semibold">AlWan By You</p>
@@ -369,7 +388,7 @@
       </div>
 
       <!-- Card 3: How We Say Thank You -->
-      <div class="relative bg-white rounded-lg shadow-md overflow-hidden">
+      <div class="relative bg-white rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl overflow-hidden">
         <img src="./img/carousel-1.png" alt="How We Say Thank You" class="w-full h-auto object-cover">
         <div class="absolute bottom-0 left-0 p-4 text-white">
           <p class="font-semibold">Member Rewards</p>
@@ -380,6 +399,8 @@
     </div>
   </section>
 
+  <!-- Filter Sidebar -->
+    
   <footer class="bg-white py-8 md:px-52 gap-4 shadow-2xl pt-20">
     <a href="#" class=" flex items-center justify-center mb-10 md:float-left md:mt-16 md:mx-28">
         <img src="./img/logo.png" class="h-10 md:h-20" alt="">
@@ -434,7 +455,7 @@
         </div>
       </div>
 
-      <div class="text-center max-w-screen-lg mx-auto pr-5 mt-4 flex justify-end text-sm">
+      <div class="text-center max-w-screen-lg mx-auto pr-7 md:pr-0 mt-4 flex justify-end text-sm">
         <a href="#" class="flex items-center text-gray-500 hover:underline">
           <img src="./img/logo.png" class="w-5" alt="">
           AlWan
