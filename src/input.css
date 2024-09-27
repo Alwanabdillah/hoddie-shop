@@ -4,15 +4,4 @@
 * {
   font-family: Montserrat;
 }
-@layer components {
-  .custom-scrollbar::-webkit-scrollbar {
-    height: 5px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #15ff00;
-    border-radius: 10px;
-  }
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background-color: #000000;
-  }
-}
+

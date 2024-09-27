@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <link rel="shortcut icon" href="./img/logo-tab.png" type="Image/icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlWan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm py-4 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center">
+          <div onclick="openNavbar()"
+        class="toggle flex items-center space-x-4 ml-5 md:ml-10 md:hidden">
+                <a href="#" class="w-5 h-5 md:w-8 md:h-8">
+                    <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 fill-[#02546480] cursor-pointer"
+          viewBox="0 0 256 256"
+        >
+          <path
+            class="fill-[#025480]"
+            d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z"
+          ></path>
+        </svg>
+                </a>
+            </div>
+            <!-- Left: Logo -->
+            <div class="flex items-center justify-center ml-10">
+                <img src="./img/logo.png" alt="Alwan Logo" class="h-10">
+            </div>
+            <!-- Middle: Menu -->
+            <ul class="hidden md:flex space-x-6 text-gray-700 ">
+                <li><a href="#" class="hover:text-gray-900 font-bold">New & Featured</a></li>
+                <li><a href="./index.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Home</a></li>
+                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Feature</a></li>
+                <li><a href="./sale.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Sale</a></li>
+                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">News</a></li>
+                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Contact</a></li>
+            </ul>
+            <!-- Right: Search and User -->
+            
+            <div class="flex items-center space-x-3 mr-5 md:mr-0">
+<form class="max-w-lg mx-auto hidden md:block z-50">
+    <div class="flex">
+        <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200" type="button">All categories <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg></button>
+        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700 px-3" aria-labelledby="dropdown-button">
+            <li>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-400 hover:rounded-lg hover:text-white">Kids</button>
+            </li>
+            <li>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-400 hover:rounded-lg hover:text-white">Men</button>
+            </li>
+            <li>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-400 hover:rounded-lg hover:text-white">Women</button>
+            </li>
+            <li>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-400 hover:rounded-lg hover:text-white">Older</button>
+            </li>
+            </ul>
+        </div>
+        <div class="relative w-full">
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full text-sm text-gray-100 bg-gray-200 rounded-e-lg border-s-gray-100 border border-gray-300" placeholder="Search" required />
+            <button type="submit" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-gray-700 rounded-e-lg border hover:border-gray-100 hover:bg-gray-800 ">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+                <span class="sr-only">Search</span>
+            </button>
+        </div>
+    </div>
+</form>
+                <a href="#" class="text-gray-700 hover:text-gray-100"
+              ><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path></svg>
+                </a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <aside
+      class="w-full h-[300px] bg-blur-lg bg-white bg-opacity-90 absolute z-50 transition-all duration-200 ease-in-out -translate-x-full xl:hidden"
+    >
+      <div
+        class="content backdrop-blur h-full flex items-center justify-center relative z-[99]"
+      >
+        <button onclick="closeNavbar()" class="absolute right-6 top-7">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-[#5b6869] w-6 h-6"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="grid grid-cols-2 gap-8 text-center">
+          <li>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="index.html">New & Featured</a>
+          </li>
+          <li>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="index.html">Home</a>
+          </li>
+          <li>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#about">Feature</a>
+          </li>
+          <li>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#gallery">Sale</a>
+            </li>
+          <li>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#footer">News</a>
+          </li>
+          <li>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="max-w-8xl mx-auto p-14">
+        <!-- Container -->
+        <div class="flex flex-col lg:flex-row">
+            
+            <!-- Left Image Section -->
+            <div class="flex flex-col items-center lg:w-1/2">
+                <div class="flex flex-col items-center space-y-10">
+                    <img src="./img/s-4.png" alt="" class="w-96 h-auto hover:opacity-90 duration-500" />
+                    <div class="grid grid-cols-4 gap-2 mt-4">
+                        <!-- Thumbnails -->
+                        <img src="./img/s-1.png" alt="Thumbnail 1" class="w-20 h-auto hover:opacity-60 duration-500">
+                        <img src="./img/s-1.png" alt="Thumbnail 2" class="w-20 h-auto hover:opacity-60 duration-500">
+                        <img src="./img/s-1.png" alt="Thumbnail 3" class="w-20 h-auto hover:opacity-60 duration-500">
+                        <img src="./img/s-1.png" alt="Thumbnail 4" class="w-20 h-auto hover:opacity-60 duration-500">
+                        <img src="./img/s-1.png" alt="Thumbnail 5" class="w-20 h-auto hover:opacity-60 duration-500">
+                        <img src="./img/s-1.png" alt="Thumbnail 6" class="w-20 h-auto hover:opacity-60 duration-500">
+                        <img src="./img/s-1.png" alt="Thumbnail 5" class="w-20 h-auto hover:opacity-60 duration-500">
+                        <img src="./img/s-1.png" alt="Thumbnail 6" class="w-20 h-auto hover:opacity-60 duration-500">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content Section -->
+            <div class="lg:w-1/2">
+                <div class="mb-4">
+                    <span class="text-sm text-gray-500">I am both shield and sword.</span>
+                    <h1 class="text-4xl font-bold mt-2">AlWan Hoddie</h1>
+                    <p class="text-lg text-gray-600 mt-1">Sweet Hoddie</p>
+                    <p class="text-lg font-semibold text-gray-800 mt-4">Rp 2.099.000</p>
+                </div>
+
+                <div class="p-4 border rounded-md">
+  <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates!</p>
+  
+  <div class="mt-4">
+    <p class="text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore ipsam delectus qui est nobis.</p>
+    <p class="mt-2 text-gray-700">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem nihil beatae sint animi, illo pariatur id soluta voluptas. Molestias officiis unde doloribus quidem ex, debitis dolorum explicabo vitae facere voluptas.
+    </p>
+    
+    <ul class="mt-4 list-disc pl-5 text-gray-700">
+      <li>Colour : Armoury Navy</li>
+      <li>Style : Cool</li>
+      <li>Region of Origin : Indonesia</li>
+    </ul>
+
+  </div>
+
+  <div class="mt-6">
+    <details class="border-t border-gray-300 pt-4 mt-2">
+      <summary class="cursor-pointer text-gray-700 font-semibold">Size</summary>
+      <!-- Isi detail untuk How This Was Made -->
+       <div class="mt-4">
+                    <div class="grid grid-cols-4 gap-2">
+                        <button class="border rounded-lg p-2 hover:border-gray-500">S</button>
+                        <button class="border rounded-lg p-2 hover:border-gray-500">M</button>
+                        <button class="border rounded-lg p-2 hover:border-gray-500">L</button>
+                        <button class="border rounded-lg p-2 hover:border-gray-500">XL</button>
+                        <button class="border rounded-lg p-2 hover:border-gray-500">XXL</button>
+                        <button class="border rounded-lg p-2 hover:border-gray-500">XXXL</button>
+                        
+                    </div>
+                </div>
+    </details>
+  </div>
+</div>
+
+                <!-- Size Options -->
+                
+
+                <!-- Buttons -->
+                <div class="mt-6 space-x-4">
+                    <button class="px-6 py-2 bg-black text-white rounded-lg hover:bg-slate-700 duration-500">Checkout</button>
+                    <button class="px-6 py-2 border border-gray-400 text-gray-700 rounded-lg hover:bg-slate-200 duration-500">Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <footer class="bg-white py-8 md:px-52 gap-4 shadow-2xl pt-20">
+    <a href="#" class=" flex items-center justify-center mb-10 md:float-left md:mt-16 md:mx-28">
+        <img src="./img/logo.png" class="h-10 md:h-20" alt="">
+      </a>
+    <div class="max-w-screen-lg mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+      
+      <!-- Resources Column -->
+      <div>
+        <h3 class="font-semibold mb-4 text-center md:text-left">Resources</h3>
+        <ul class="text-center md:text-left">
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Find A Store</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Become A Member</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Education Discounts</a></li>
+          <li><a href="#" class="text-gray-600 hover:underline">Send Us Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- Help Column -->
+      <div>
+        <h3 class="font-semibold mb-4 text-center md:text-left">Help</h3>
+        <ul class="text-center md:text-left">
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Get Help</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Order Status</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Delivery</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Returns</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Payment Options</a></li>
+          <li><a href="#" class="text-gray-600 hover:underline">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Company Column -->
+      <div>
+        <h3 class="font-semibold mb-4 text-center md:text-left">Company</h3>
+        <ul class="text-center md:text-left">
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">About AlWan</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">News</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Careers</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-600 hover:underline">Investors</a></li>
+          <li><a href="#" class="text-gray-600 hover:underline">Sustainability</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t mt-8 pt-4">
+      <div class="max-w-screen-lg mx-auto flex flex-col sm:flex-row justify-between text-gray-500 text-sm">
+        <p class="text-center md:text-left">© 2024 AlWan, Inc. All rights reserved</p>
+        <div class="text-center md:text-left md:flex flex-wrap gap-4 mt-4 sm:mt-0">
+          <a href="#" class="hover:underline">Guides</a>
+          <a href="#" class="hover:underline">Terms of Sale</a>
+          <a href="#" class="hover:underline">Terms of Use</a>
+          <a href="#" class="hover:underline">Alwan Privacy Policy</a>
+        </div>
+      </div>
+
+      <div class="text-center max-w-screen-lg mx-auto pr-7 md:pr-0 mt-4 flex justify-end text-sm">
+        <a href="#" class="flex items-center text-gray-500 hover:underline">
+          <img src="./img/logo.png" class="w-5" alt="">
+          AlWan
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+      const sidebar = document.querySelector("aside");
+
+      function openNavbar() {
+        sidebar.classList.add("translate-x-0");
+        sidebar.classList.remove("-translate-x-full");
+      }
+
+      function closeNavbar() {
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("-translate-x-full");
+      }
+  </script>
+</body>
+</html>
