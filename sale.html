@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
         <link rel="shortcut icon" href="./img/logo-tab.png" type="Image/icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlWan</title>
+    <title>Sale</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -36,12 +36,12 @@
             </div>
             <!-- Middle: Menu -->
             <ul class="hidden md:flex space-x-6 text-gray-700 ">
-                <li><a href="#" class="hover:text-gray-900 font-bold">New & Featured</a></li>
-                <li><a href="./index.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Home</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Feature</a></li>
+                <li><a href="#newfeature" class="hover:text-gray-900 font-bold">New & Featured</a></li>
+                <li><a href="index.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Home</a></li>
+                <li><a href="#feature" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Feature</a></li>
                 <li><a href="./sale.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Sale</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">News</a></li>
-                <li><a href="#" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Contact</a></li>
+                <li><a href="./news.html" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">News</a></li>
+                <li><a href="#footer" class="hover:text-gray-900 font-bold hover:border-b-2 translate-x-10 transition-all duration-75 border-gray-600">Contact</a></li>
             </ul>
             <!-- Right: Search and User -->
             
@@ -68,17 +68,17 @@
             </ul>
         </div>
         <div class="relative w-full">
-            <input type="search" id="search-dropdown" class="block p-2.5 w-full text-sm text-gray-100 bg-gray-200 rounded-e-lg border-s-gray-100 border border-gray-300" placeholder="Search" required />
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full text-sm text-gray-600 bg-gray-200 rounded-e-lg border-s-gray-100 border border-gray-300" placeholder="Search" required />
             <button type="submit" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-gray-700 rounded-e-lg border hover:border-gray-100 hover:bg-gray-800 ">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <svg class="w-4 h-4 text-slate-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
-                <span class="sr-only">Search</span>
+                <span class="sr-only text-slate-600">Search</span>
             </button>
         </div>
     </div>
 </form>
-                <a href="#" class="text-gray-700 hover:text-gray-100"
+                <a href="sale.html" class="text-gray-700 hover:text-gray-100 mt-2 md:mt-0"
               ><svg xmlns="http://www.w3.org/2000/svg" fill="#000000" class="w-5 h-5 md:w-8 md:h-8" viewBox="0 0 256 256"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path></svg>
                 </a>
             </div>
@@ -87,7 +87,7 @@
     </nav>
 
     <aside
-      class="w-full h-[300px] bg-blur-lg bg-white bg-opacity-90 absolute z-50 transition-all duration-200 ease-in-out -translate-x-full sm:hidden"
+      class="w-full h-[300px] bg-blur-lg bg-white bg-opacity-90 absolute z-50 transition-all duration-200 ease-in-out -translate-x-full xl:hidden"
     >
       <div
         class="content backdrop-blur h-full flex items-center justify-center relative z-[99]"
@@ -95,7 +95,7 @@
         <button onclick="closeNavbar()" class="absolute right-6 top-7">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="fill-[#5b6869] w-6 h-6"
+            class="fill-[#5b6869] w-6 "
             viewBox="0 0 256 256"
           >
             <path
@@ -112,13 +112,13 @@
             <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="index.html">Home</a>
           </li>
           <li>
-            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#about">Feature</a>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#feature">Feature</a>
           </li>
           <li>
             <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#gallery">Sale</a>
             </li>
           <li>
-            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#footer">News</a>
+            <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="news.html">News</a>
           </li>
           <li>
             <a onclick="closeNavbar()" class="text-base text-[#2c1810] dark:text-gray-500 font-semibold hover:text-gray-500" href="#footer">Contact</a>
@@ -126,6 +126,7 @@
         </ul>
       </div>
     </aside>
+
     
     <!-- Start Card  -->
     <section class="px-3">
@@ -142,13 +143,7 @@
                 </ul>
             </div>
             <!-- More Filters like Gender, Kids, Price, etc. -->
-            <div>
-                <h3 class="font-semibold mb-2">Gender</h3>
-                <select class="w-full border border-gray-300 rounded p-2 mb-4">
-                    <option>Men</option>
-                    <option>Women</option>
-                </select>
-            </div>
+            
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
         <a href="checkout.html">
@@ -156,7 +151,7 @@
         <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
               <img src="./img/s-1.png" alt="">
               <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
               <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
               <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
               <div class="hidden md:block">
@@ -177,10 +172,10 @@
         <a href="checkout.html">
         <div class="flex flex-col md:flex-row">
         <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
+              <img src="./img/s-2.png" alt="">
+              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Pluto Hodie</span></h2>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
+              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 1.500.000</p>
               <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
               <div class="hidden md:block">
           <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
@@ -200,10 +195,10 @@
         <a href="checkout.html">
         <div class="flex flex-col md:flex-row">
         <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
+              <img src="./img/s-3.png" alt="">
+              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Jupiter Hodie</span></h2>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
+              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 899.000</p>
               <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
               <div class="hidden md:block">
           <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
@@ -223,10 +218,10 @@
         <a href="checkout.html">
         <div class="flex flex-col md:flex-row">
         <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
+              <img src="./img/s-4.png" alt="">
+              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Venus Hodie</span></h2>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
+              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 350.000</p>
               <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
               <div class="hidden md:block">
           <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
@@ -246,10 +241,33 @@
         <a href="checkout.html">
         <div class="flex flex-col md:flex-row">
         <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
+              <img src="./img/s-5.png" alt="">
+              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Uranus Hodie</span></h2>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
+              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 199.500</p>
+              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.099.000</span> <span class="text-gray-700">-20%</span></p>
+              <div class="hidden md:block">
+          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
+            <span class="flex items-center bottom-3">
+              <p class="text-green-500 text-2xl mt-3">+</p>
+              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
+          </span>
+              <span class="flex items-center">
+              <p class="text-yellow-500 text-2xl mb-1">+</p>
+              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
+              </span>
+          </div>
+        </div>
+        </div>
+        </div>
+        </a>
+        <a href="checkout.html">
+        <div class="flex flex-col md:flex-row">
+        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
+              <img src="./img/s-6.png" alt="">
+              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Saturnus Hodie</span></h2>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
+              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 909.000</p>
               <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
               <div class="hidden md:block">
           <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
@@ -269,10 +287,10 @@
         <a href="checkout.html">
         <div class="flex flex-col md:flex-row">
         <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
+              <img src="./img/s-7.png" alt="">
+              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Neptunus Hodie</span></h2>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
+              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 679.000</p>
               <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
               <div class="hidden md:block">
           <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
@@ -292,10 +310,10 @@
         <a href="checkout.html">
         <div class="flex flex-col md:flex-row">
         <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
+              <img src="./img/s-8.png" alt="">
+              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Earth Hodie</span></h2>
+              <p class="text-[9px] md:text-base pt-1">Sweet Hodie</p>
+              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 199.000</p>
               <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
               <div class="hidden md:block">
           <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
@@ -312,259 +330,7 @@
         </div>
         </div>
         </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
-        <a href="checkout.html">
-        <div class="flex flex-col md:flex-row">
-        <div class="bg-slate-100 p-3 md:p-4 rounded-lg shadow-lg hover:shadow-2xl">
-              <img src="./img/s-1.png" alt="">
-              <h2 class="text-xs md:text-xl font-bold text-gray-600 pt-2">AlWan <span class="text-[11px] font-medium">Mars Hodie</span></h2>
-              <p class="text-[9px] md:text-base pt-1">Road Running Hodie</p>
-              <p class="text-green-600 font-bold text-[10px] md:text-lg mt-2">Rp 2.099.000</p>
-              <p class="text-gray-400 font-bold text-[10px]"><span class="line-through">Rp 2.070.000</span> <span class="text-gray-700">-20%</span></p>
-              <div class="hidden md:block">
-          <div class="flex flex-col items-start mt-1 text-xs text-gray-600">
-            <span class="flex items-center bottom-3">
-              <p class="text-green-500 text-2xl mt-3">+</p>
-              <h3 class="ml-1 font-semibold mt-4">Jakarta Barat</h3>
-          </span>
-              <span class="flex items-center">
-              <p class="text-yellow-500 text-2xl mb-1">+</p>
-              <h3 class="ml-1 font-semibold"><span class="text-sm">4.9 |</span> 3rb+  terjual</h3>
-              </span>
-          </div>
-        </div>
-        </div>
-        </div>
-        </a>
+        
       </div>
       </div>
     </section>
